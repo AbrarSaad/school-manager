@@ -9,7 +9,7 @@ class AdminsController < ApplicationController
   end
 
   def new
-    @admin=Admin.new
+    @admin = Admin.new
   end
 
   def edit
@@ -57,7 +57,7 @@ class AdminsController < ApplicationController
   end
 
   def admin_params
-    params.require(:admin).permit(:first_name, :last_name, :age, :person_dob)
+    params.require(:admin).permit(:first_name, :last_name, :age, :person_dob,:sex,:the_class,:adress,:email,:student_number)
   end
 
 end

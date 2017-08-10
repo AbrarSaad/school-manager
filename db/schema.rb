@@ -10,15 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170808181647) do
+ActiveRecord::Schema.define(version: 20170810125334) do
 
   create_table "admins", force: :cascade do |t|
-    t.string   "first_name", limit: 25,              null: false
-    t.string   "last_name",  limit: 25,              null: false
-    t.integer  "age",                   default: 18
+    t.string   "first_name",     limit: 25,              null: false
+    t.string   "last_name",      limit: 25,              null: false
+    t.integer  "age",                       default: 18
     t.date     "person_dob"
-    t.datetime "created_at",                         null: false
-    t.datetime "updated_at",                         null: false
+    t.datetime "created_at",                             null: false
+    t.datetime "updated_at",                             null: false
+    t.string   "sex"
+    t.string   "the_class"
+    t.string   "email"
+    t.string   "student_number"
+    t.string   "adress"
   end
 
 end

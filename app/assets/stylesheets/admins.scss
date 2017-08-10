@@ -19,14 +19,30 @@
 body
 {margin: 0;
 padding: 0;
+  text-align: center;
   background-image: url(student.gif);
    background-repeat: no-repeat;
    background-size: cover;
     height: 100vh;
-}
-a
-{
-  color : green;
-}
 
+}
+.table-striped
+{
+   font-size: 20px;
+}
+.print {
+    background-color: #265a88;
+    color: black;
+    border: 2px solid #204d74;
+    padding:2px;
+    font-size:16px;
+    color:white;
+     font-family: "Times New Roman", Times, serif;
+     border-radius: 4px;
+}
+.print:hover {
+  background-color: #4CAF50;
+    color: white;
+  border-color: white;
+  }
 

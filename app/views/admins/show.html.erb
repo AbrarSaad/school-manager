@@ -20,10 +20,42 @@
 <strong>person dob</strong>
 <%=@admin.person_dob %>
 </p>
+<p>
+<strong>sex</strong>
+<%=@admin.sex %>
+</p>
+<p>
+<strong>the_class</strong>
+<%=@admin.the_class %>
+</p>
+<p>
+<strong>address</strong>
+<%=@admin.adress %>
+</p>
 
-<%= link_to 'Edit', edit_admin_path(@admin) %>
+<p>
+<strong>email</strong>
+<%=@admin.email %>
+</p>
+<p>
+<strong>student_number</strong>
+<%=@admin.student_number %>
+</p>
 
-<%= link_to 'Back', admins_path %>
+
+
+<%= link_to 'Back', admins_path,class:"btn btn-primary btn-sm" %>
+
+<%= link_to 'Edit', edit_admin_path(@admin),class:"btn btn-primary btn-sm" %>
+
+<button class="print" onclick="myFunction()">Print this page</button>
+
+<script>
+function myFunction() {
+    window.print();
+}
+</script>
+
 
 
 

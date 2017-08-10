@@ -1,11 +1,5 @@
 class ManageController < ApplicationController
   def index
-    @arr = ["abrar","haitham","saad"]
-    @id=params["id"]
-    @name=params["name"]
-  end
-
-  def home
-
+    redirect_to(:controller=>"admins",:action=>"new")
   end
 end
